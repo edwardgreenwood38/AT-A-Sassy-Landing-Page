@@ -1,0 +1,35 @@
+
+
+// Import variables
+@import 'config.scss';
+
+nav {
+  background-color: $nav-background;
+  color: $nav-text-color;
+  @include clearfix();
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  li {
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    display: block;
+    padding: 1em;
+    color: $nav-text-color;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+
+    &:hover {
+      background-color: $nav-hover-background;
+      color: $nav-hover-text-color;
+    }
+  }
+}
